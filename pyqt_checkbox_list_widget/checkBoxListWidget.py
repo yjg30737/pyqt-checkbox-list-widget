@@ -1,3 +1,5 @@
+import typing
+
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtWidgets import QListWidgetItem, QListWidget
 
@@ -14,10 +16,15 @@ class CheckBoxListWidget(QListWidget):
         state = item.checkState()
         self.checkedSignal.emit(r_idx, state)
 
-    def addItem(self, aitem: QListWidgetItem) -> None:
-        aitem.setFlags(aitem.flags() | Qt.ItemIsUserCheckable)
-        aitem.setCheckState(Qt.Unchecked)
-        super().addItem(aitem)
+    def addItems(self, labels: typing.Iterable[str]) -> None:
+        super().addItems(labels)
+
+    def addItem(self, item) -> None:
+        if isinstance(item, str):
+            item = QListWidgetItem(item)
+        item.setFlags(item.flags() | Qt.ItemIsUserCheckable)
+        item.setCheckState(Qt.Unchecked)
+        super().addItem(item)
 
     def toggleState(self, state):
         for i in range(self.count()):
