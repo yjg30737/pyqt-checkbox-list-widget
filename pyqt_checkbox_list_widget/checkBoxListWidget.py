@@ -16,8 +16,9 @@ class CheckBoxListWidget(QListWidget):
         state = item.checkState()
         self.checkedSignal.emit(r_idx, state)
 
-    def addItems(self, labels: typing.Iterable[str]) -> None:
-        super().addItems(labels)
+    def addItems(self, items) -> None:
+        for item in items:
+            self.addItem(item)
 
     def addItem(self, item) -> None:
         if isinstance(item, str):
