@@ -7,6 +7,9 @@ PyQt5 >= 5.8
 ## Setup
 ```pip3 install git+https://github.com/yjg30737/pyqt-checkbox-list-widget.git --upgrade```
 
+## Included Packages
+* <a href="https://github.com/yjg30737/pyqt-show-long-text-as-tooltip-list-widget.git">pyqt-show-long-text-as-tooltip-list-widget</a> - Parent class
+
 ## Example
 ```python
 from PyQt5.QtWidgets import QCheckBox, QVBoxLayout, QWidget, QApplication
