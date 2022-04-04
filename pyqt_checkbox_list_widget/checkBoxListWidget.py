@@ -2,9 +2,10 @@ import typing
 
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtWidgets import QListWidgetItem, QListWidget
+from pyqt_show_long_text_as_tooltip_list_widget import ShowLongTextAsToolTipListWidget
 
 
-class CheckBoxListWidget(QListWidget):
+class CheckBoxListWidget(ShowLongTextAsToolTipListWidget):
     checkedSignal = pyqtSignal(int, Qt.CheckState)
 
     def __init__(self):
