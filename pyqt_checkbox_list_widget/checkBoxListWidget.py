@@ -1,7 +1,5 @@
-import typing
-
 from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtWidgets import QListWidgetItem, QListWidget
+from PyQt5.QtWidgets import QListWidgetItem
 from pyqt_show_long_text_as_tooltip_list_widget import ShowLongTextAsToolTipListWidget
 
 
