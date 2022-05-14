@@ -11,6 +11,6 @@ setup(
     url='https://github.com/yjg30737/pyqt-checkbox-list-widget.git',
     install_requires=[
         'PyQt5>=5.8',
-        'pyqt-show-long-text-as-tooltip-list-widget @ git+https://git@github.com/yjg30737/pyqt-show-long-text-as-tooltip-list-widget.git@main'
+        'pyqt-tooltip-list-widget>=0.0.1'
     ]
 )
