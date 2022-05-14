@@ -5,7 +5,7 @@ PyQt QListWidget for checkable items
 PyQt5 >= 5.8
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/pyqt-checkbox-list-widget.git --upgrade```
+`python -m pip install pyqt-checkbox-list-widget`
 
 ## Included Packages
 * <a href="https://github.com/yjg30737/pyqt-tooltip-list-widget.git">pyqt-tooltip-list-widget</a> - parent class
