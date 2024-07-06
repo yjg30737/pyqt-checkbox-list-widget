@@ -10,6 +10,9 @@ PyQt5 >= 5.8
 ## Included Packages
 * <a href="https://github.com/yjg30737/pyqt-tooltip-list-widget.git">pyqt-tooltip-list-widget</a> - parent class
 
+### Note
+If you want to use pyqt-checkbox-list-widget only without pyqt-tooltip-list-widget, just remove and update the source - bug won't occur.
+
 ## Example
 ```python
 from PyQt5.QtWidgets import QCheckBox, QVBoxLayout, QWidget, QApplication
